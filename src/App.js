@@ -1,15 +1,13 @@
 import React from 'react';
-import AccountApi from './api/account/AccountApi'
-import CreateAccountForm from './components/CreateAccount/CreateAccountForm'
+import CreateExpenseForm from './components/CreateExpenseForm/CreateExpenseForm'
+import ExpenseApi from './api/ExpenseApi'
 import './App.css'
 
 function App() {
 
   return (
     <div className="App">
-      <CreateAccountForm
-        createAccountApi={AccountApi.createAccount}
-      />
+      <CreateExpenseForm onSubmit={ExpenseApi.create} />
     </div>
   );
 }
