@@ -1,6 +1,5 @@
 import React from 'react';
-import Input from '../Input/Input';
-import './CreateExpenseForm.css'
+import Input from './Input';
 
 class CreateExpenseForm extends React.PureComponent {
 

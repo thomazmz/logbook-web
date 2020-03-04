@@ -1,3 +1,13 @@
+@import-normalize;
+
+.App  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Expense Form */
+
 .expenseForm {
   display: flex;
   flex-direction: row;
@@ -33,4 +43,28 @@
 .expenseForm input:focus {
   border: none;
   box-shadow: 0 0 2pt 1pt #04d193;
+}
+
+/* Expense List */
+
+.expensesList {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 50%;
+  padding: 10px;
+}
+
+.expensesList li {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.expensesList li p {
+
+  flex-grow: 1;
 }

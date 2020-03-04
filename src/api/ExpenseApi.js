@@ -8,12 +8,11 @@ const expenses = [
 ];
 
 const ExpenseApi =  {
-  create: async expense => {
+  create: expense => {
     expenses.push(expense);
-    console.log(expenses);
   },
-  getExpenss: async () => {
-    return expenses;
+  getAll: () => {
+    return expenses.slice();
   }
 }
 
