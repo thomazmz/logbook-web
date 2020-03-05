@@ -2,19 +2,7 @@ import React from 'react';
 import ExpensesListItem from './ExpenseItem';
 
 class ExpensesList extends React.PureComponent {
-
-  buildItems() {
-    return this.props.expenses.map((expense, index) => (
-      <ExpensesListItem key={index} item={expense} />
-    ))
-  }
-
-  getTotal() {
-    return this.props.expenses
-    .map(expense => expense.value)
-    .reduce((prev, next) => parseFloat(prev) + parseFloat(next))
-  }
-
+  
   render() {
     return (
       <div className='expenseList'>
@@ -22,11 +10,13 @@ class ExpensesList extends React.PureComponent {
           <thead>
             <tr>
               <th>{'Total'}</th>
-              <th>{'R$' + this.getTotal()}</th>
+              <th>{'R$' + this.props.expenses.reduce((sum, expense) => sum + parseFloat(expense.value), 0)}</th>
             </tr>
           </thead>
           <tbody>
-            {this.buildItems()}
+            {this.props.expenses.map((expense, index) => (
+              <ExpensesListItem key={index} item={expense} />
+            ))}
           </tbody>
         </table>
       </div>

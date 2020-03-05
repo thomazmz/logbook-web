@@ -16,7 +16,7 @@ class CreateExpenseForm extends React.PureComponent {
     return (
       <form className={'createExpenseForm section ui form'} onSubmit={this.createExpense}>
         <div className={'two fields'}>
-          <div class='field'>
+          <div className='field'>
             <Input 
               placeholder={'Title'}
               keyName={'title'}
@@ -24,7 +24,7 @@ class CreateExpenseForm extends React.PureComponent {
               setFieldValue={this.setFieldValue}
             />
           </div>
-          <div class="field">
+          <div className="field">
             <Input
               placeholder={'Value'}
               keyName={'value'}
@@ -32,7 +32,7 @@ class CreateExpenseForm extends React.PureComponent {
             />
           </div>
         </div>
-        <div class="field">
+        <div className="field">
           <button className={'fluid ui violet button'} type='submit'>
             Create New Expense
           </button>
