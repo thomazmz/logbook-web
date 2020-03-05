@@ -14,24 +14,29 @@ class CreateExpenseForm extends React.PureComponent {
 
   render() {
     return (
-      <form className={'expenseForm'} onSubmit={this.createExpense}>
-
-        <Input 
-          keyName={'title'}
-          placeHolder={'Expense Title'}
-          setFieldValue={this.setFieldValue}
-        />
-
-        <Input
-          keyName={'value'}
-          placeHolder={'Expense Value'}
-          setFieldValue={this.setFieldValue}
-        />
-
-        <button type='submit'>
-          Create New Expense
-        </button>
-
+      <form className={'createExpenseForm section ui form'} onSubmit={this.createExpense}>
+        <div className={'two fields'}>
+          <div class='field'>
+            <Input 
+              placeholder={'Title'}
+              keyName={'title'}
+              placeHolder={'Expense Title'}
+              setFieldValue={this.setFieldValue}
+            />
+          </div>
+          <div class="field">
+            <Input
+              placeholder={'Value'}
+              keyName={'value'}
+              setFieldValue={this.setFieldValue}
+            />
+          </div>
+        </div>
+        <div class="field">
+          <button className={'fluid ui violet button'} type='submit'>
+            Create New Expense
+          </button>
+        </div>
       </form>
     );
   }

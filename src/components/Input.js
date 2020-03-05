@@ -8,10 +8,13 @@ class Input extends React.PureComponent {
 
   render() {
     return (
-      <input
-        type={this.props.type || 'text'}
-        onChange={this.changeHandler(this.props.keyName)}
-      />
+      <div className={'ui input'}>
+        <input
+          type={this.props.type || 'text'}
+          placeholder={this.props.placeholder || ''}
+          onChange={this.changeHandler(this.props.keyName)}
+        />
+      </div>
     );
   }
 }

@@ -13,16 +13,13 @@ class ExpensesPage extends React.PureComponent {
   }
 
   createExpense = expense => {
-    console.log(this.state)
     ExpenseApi.create(expense);
     this.setState({
       expenses: ExpenseApi.getAll()
     });
-    console.log(this.state)
   }
 
   render() {
-    console.log('!')
     return (
       <React.Fragment>
         <CreateExpenseForm onSubmit={this.createExpense} />

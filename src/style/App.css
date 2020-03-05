@@ -1,4 +1,7 @@
-@import-normalize;
+body {
+  font-size: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+}
 
 .App  {
   display: flex;
@@ -6,65 +9,19 @@
   align-items: center;
 }
 
-/* Expense Form */
+.createExpenseForm {
+  padding: 40%;
+}
 
-.expenseForm {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-  justify-content: space-between;
+.createExpenseForm {
   width: 50%;
-  padding: 10px;
+  margin-top: 40px;
+  padding: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.expenseForm input {
-  flex-grow: 1;
-  margin-right: 10px;
-  outline: none;
-}
-
-.expenseForm button {
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  background-color: #00bf86;
-  color: white;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-.expenseForm button:hover,
-.expenseForm button:focus {
-  background-color: #04d193;
-}
-
-.expenseForm input:focus {
-  border: none;
-  box-shadow: 0 0 2pt 1pt #04d193;
-}
-
-/* Expense List */
-
-.expensesList {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  justify-content: space-between;
+.expenseList {
   width: 50%;
-  padding: 10px;
-}
-
-.expensesList li {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.expensesList li p {
-
-  flex-grow: 1;
+  margin-top: 40px;
+  font-size: 1.5em;
 }

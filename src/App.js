@@ -1,6 +1,5 @@
 import React from 'react';
 import ExpensesPage from './components/ExpensesPage'
-import './style/normalize.css'
 import './style/App.css'
 
 function App() {

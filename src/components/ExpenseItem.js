@@ -2,10 +2,10 @@ import React from 'react';
 
 function ExpensesListItem(props) {
   return (
-    <li>
-      <p>{props.item.title}</p>
-      <p>{props.item.value}</p>
-    </li>
+    <tr>
+      <td>{props.item.title}</td>
+      <td>{'R$' + props.item.value}</td>
+    </tr>
   );
 }
 
