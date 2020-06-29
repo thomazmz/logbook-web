@@ -15,29 +15,61 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: 'Helvetica', 'sans-serif';
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.financialRecordsTable {
+  margin: 50px;
+  padding: 50px;
+  font-weight: 200;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.financialRecordsTable table {
+  width: 100%;
+  max-width: 100%;
+}
+
+.financialRecordsTable table th {
+  font-weight: 400;
+}
+
+.financialRecordsTable table th,
+.financialRecordsTable table td {
+  padding: 0.75rem;
+  vertical-align: center;
+  text-align: left;
+  border-top: 1px solid #eceeef;
+}
+
+.financialRecordsTable table thead th {
+  vertical-align: bottom;
+  border: none
 }
