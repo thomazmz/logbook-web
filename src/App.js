@@ -1,11 +1,10 @@
 import React from 'react';
-import ExpensesPage from './components/ExpensesPage'
-import './style/App.css'
+import { FinancialRecordsTable } from './components'
 
 function App() {
   return (
     <div className="App">
-      <ExpensesPage />
+      <FinancialRecordsTable />
     </div>
   );
 }
