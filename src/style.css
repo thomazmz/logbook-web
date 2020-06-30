@@ -44,7 +44,7 @@ table {
   border-spacing: 0;
 }
 
-.financialRecordsTable {
+.financialRecordsDisplay {
   margin: 50px;
   padding: 50px;
   font-weight: 200;
@@ -52,24 +52,39 @@ table {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.financialRecordsTable table {
+.financialRecordsDisplay table {
   width: 100%;
   max-width: 100%;
 }
 
-.financialRecordsTable table th {
+.financialRecordsDisplay table th {
   font-weight: 400;
 }
 
-.financialRecordsTable table th,
-.financialRecordsTable table td {
+.financialRecordsDisplay table th,
+.financialRecordsDisplay table td {
   padding: 0.75rem;
   vertical-align: center;
   text-align: left;
   border-top: 1px solid #eceeef;
 }
 
-.financialRecordsTable table thead th {
+.financialRecordsDisplay table tr:hover {
+  background-color: #eceeef;
+}
+
+.financialRecordsDisplay table thead th {
   vertical-align: bottom;
   border: none
+}
+
+.financialRecordsControls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: .75rem;
+}
+
+.financialRecordsControls button {
+  margin-left: 1em;
 }

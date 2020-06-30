@@ -1,10 +1,10 @@
 import React from 'react';
-import { FinancialRecordsTable } from './components'
+import { FinancialRecordsDisplay } from './components'
 
 function App() {
   return (
     <div className="App">
-      <FinancialRecordsTable />
+      <FinancialRecordsDisplay />
     </div>
   );
 }

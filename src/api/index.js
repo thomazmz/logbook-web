@@ -1,8 +1,5 @@
-import { get, create } from './financialRecords'
+import { getAll, create } from './financialRecords'
 
 export const financialRecordsApi = {
-  get, create
+  getAll, create
 }
-
-
-// export * as financialRecordsApi from './financialRecords'
